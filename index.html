@@ -469,6 +469,18 @@ $(document).ready(function(){
 							<td>true</td>
 							<td>Prev/Next Arrows</td>
 						</tr>
+                        <tr>
+                            <td>prevArrow</td>
+                            <td>string (html|jQuery selector) | object (DOM node|jQuery object)</td>
+                            <td>&lt;button type="button" class="slick-prev">Previous&lt;/button&gt;</td>
+                            <td>Allows you to select a node or customize the HTML for the "Previous" arrow.</td>
+                        </tr>
+                        <tr>
+                            <td>nextArrow</td>
+                            <td>string (html|jQuery selector) | object (DOM node|jQuery object)</td>
+                            <td>&lt;button type="button" class="slick-next">Next&lt;/button&gt;</td>
+                            <td>Allows you to select a node or customize the HTML for the "Next" arrow.</td>
+                        </tr>
 						<tr>
 							<td>centerMode</td>
 							<td>boolean</td>
@@ -558,6 +570,12 @@ $(document).ready(function(){
 							<td>boolean</td>
 							<td>true</td>
 							<td>Pause Autoplay On Hover</td>
+						</tr>
+						<tr>
+							<td>pauseOnDotsHover</td>
+							<td>boolean</td>
+							<td>false</td>
+							<td>Pause Autoplay when a dot is hovered</td>
 						</tr>
 						<tr>
 							<td>responsive</td>
@@ -681,6 +699,11 @@ $(document).ready(function(){
 							<td>index</td>
 							<td>Removes applied filtering</td>
 						</tr>
+                        <tr>
+                            <td>slickGetOption</td>
+                            <td>option : string</td>
+                            <td>Gets an individual option value.</td>
+                        </tr>
 						<tr>
 							<td>slickSetOption</td>
 							<td>option : string, value : depends on option, refresh : boolean</td>

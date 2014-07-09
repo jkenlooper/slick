@@ -888,6 +888,9 @@
             loadRange, cloneRange, rangeStart, rangeEnd;
 
         function loadImages(imagesScope) {
+            if (_.options.onLoadImages !== null) {
+              _.options.onLoadImages.call(this, _, imagesScope);
+            }
             $('img[data-lazy]', imagesScope).each(function() {
                 var image = $(this),
                     imageSource = $(this).attr('data-lazy');
